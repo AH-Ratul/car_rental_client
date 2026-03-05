@@ -1,12 +1,12 @@
 import Image from "next/image";
+import HeroSection from "./_ui/HeroSection";
+import BenefitSection from "./_ui/BenefitSection";
 
 export default function Home() {
   return (
-    <div className="flex flex-col justify-center items-center">
-      <div className="bg-bermuda h-10 w-full">
-          <p></p>
-      </div>
-      <h1 className="text-3xl font-bold">Welcome to Dhaka Car Rental!</h1>
+    <div className="w-full">
+      <HeroSection />
+      <BenefitSection />
       
     </div>
   );
