@@ -1,5 +1,5 @@
 import { Globe } from "lucide-react";
-import SearchForm from "./SearchForm";
+import SearchForm from "../../../components/shared/SearchForm";
 
 export default function HeroSection() {
   return (
