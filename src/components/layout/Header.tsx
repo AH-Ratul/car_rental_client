@@ -6,17 +6,17 @@ import { Button } from "../ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
-const Header = () => {
+export default function Header() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   return (
-    <header className="sticky top-0 border-b border-b-black px-2 py-3 sm:px-20">
+    <header className="sticky top-0 bg-white border-b border-b-bluewood px-2 py-2 sm:px-20">
       <div className="flex items-center justify-between">
         {/* Logo and Desktop Navigation */}
         <div className="flex items-center gap-20">
-          <Logo size={80} />
+          <Logo size={100} />
 
-          <nav className="hidden items-center gap-10 uppercase text-bluewood md:flex">
+          <nav className="hidden items-center gap-10 uppercase text-bluewood xl:flex">
             {[
               { href: "/", label: "Home" },
               { href: "/about", label: "About" },
@@ -35,10 +35,10 @@ const Header = () => {
 
         {/* Action Buttons */}
         <div className="flex items-center gap-3">
-          <button className="rounded-full bg-bermuda px-6 py-3 font-medium text-lg text-bluewood shadow-xl hover:opacity-90 transition-opacity">
+          <button className="rounded-full bg-bermuda px-7 py-2.5 font-medium text-lg text-bluewood shadow-xl hover:opacity-90 transition-opacity">
             Book Now
           </button>
-          <button className="hidden rounded-sm bg-sunset-orange px-5 py-3 font-medium text-white hover:opacity-90 transition-opacity md:block">
+          <button className="hidden rounded-sm bg-sunset-orange px-7 py-3 font-medium text-white hover:opacity-90 transition-opacity xl:block">
             Sign In
           </button>
         </div>
@@ -47,7 +47,7 @@ const Header = () => {
         <Button
           onClick={() => setIsOpen(!isOpen)}
           variant="outline"
-          className="md:hidden h-12 w-14 rounded bg-white! px-0! cursor-pointer"
+          className="xl:hidden h-12 w-14 rounded bg-white! px-0! cursor-pointer"
           aria-label="Toggle menu"
           aria-expanded={isOpen}
           asChild
@@ -58,7 +58,7 @@ const Header = () => {
 
       {/* Mobile Navigation */}
       {isOpen && (
-        <nav className="flex flex-col items-start gap-5 pl-5 uppercase text-bluewood md:hidden my-3">
+        <nav className="flex flex-col items-start gap-5 pl-5 uppercase text-bluewood lg:hidden my-3">
           {[
             { href: "/", label: "Home", highlight: true },
             { href: "/about", label: "About" },
@@ -85,6 +85,4 @@ const Header = () => {
       )}
     </header>
   );
-};
-
-export default Header;
+}
