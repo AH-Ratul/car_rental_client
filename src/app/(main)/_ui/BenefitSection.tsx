@@ -8,7 +8,7 @@ import cancellation from "../../../../public/images/freeCancellation.svg";
 
 export default function BenefitSection() {
   return (
-    <div className="mt-125 md:mt-80 flex justify-center items-center">
+    <div className="mt-150 sm:mt-125 md:mt-80 flex justify-center items-center">
       <div className="flex justify-between lg:justify-center items-center lg:gap-16 xl:gap-24 w-full px-10 sm:px-20 xl:px-0">
         <div className="flex flex-col justify-center items-center">
           <Image src={car} alt="car" className="w-16" />
