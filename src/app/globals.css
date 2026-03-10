@@ -94,3 +94,18 @@
     @apply bg-background text-foreground;
   }
 }
+
+.benefit-swiper {
+  padding: 40px 0;
+}
+
+.benefit-swiper .swiper-slide {
+  transition: all 0.5s ease;
+  transform: scale(0.85);
+  opacity: 0.5;
+}
+
+.benefit-swiper .swiper-slide-active {
+  transform: scale(1);
+  opacity: 1;
+}
