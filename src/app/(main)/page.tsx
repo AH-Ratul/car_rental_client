@@ -3,6 +3,8 @@ import BenefitSection from "./_ui/BenefitSection";
 import VehicleCard from "@/src/components/shared/VehicleCard";
 import ExploreCarSetion from "./_ui/ExploreCarSection";
 import BenefitCard from "./_ui/BenefitCard";
+import Testimonials from "./_ui/Testimonials";
+import AboutUs from "./_ui/AboutUs";
 
 export default function Home() {
   return (
@@ -14,6 +16,8 @@ export default function Home() {
         <ExploreCarSetion />
       </div>
         <BenefitCard />
+        <Testimonials />
+        <AboutUs />
     </div>
   );
 }
