@@ -10,7 +10,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   return (
-    <header className="sticky top-0 bg-white border-b border-b-bluewood px-2 py-2 sm:px-20">
+    <header className="sticky top-0 z-50 bg-white border-b border-b-bluewood px-2 py-2 sm:px-20">
       <div className="flex items-center justify-between">
         {/* Logo and Desktop Navigation */}
         <div className="flex items-center gap-20">
@@ -20,7 +20,7 @@ export default function Header() {
             {[
               { href: "/", label: "Home" },
               { href: "/about", label: "About" },
-              { href: "/driver", label: "Driver" },
+              { href: "/driver-info", label: "Driver" },
               { href: "/fleet", label: "Fleet" },
               { href: "/conditions", label: "Conditions" },
               { href: "/faq", label: "FAQ" },
@@ -62,7 +62,7 @@ export default function Header() {
           {[
             { href: "/", label: "Home", highlight: true },
             { href: "/about", label: "About" },
-            { href: "/driver", label: "Driver" },
+            { href: "/driver-info", label: "Driver" },
             { href: "/fleet", label: "Fleet" },
             { href: "/conditions", label: "Conditions" },
             { href: "/faq", label: "FAQ" },
